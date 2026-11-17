@@ -1,0 +1,148 @@
+[17нояб.2026 15:43:32.064] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.267, --assetIndex, 17, --assetsDir, C:\\Users\\KP\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.45, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.267, --fml.neoFormVersion, 20240808.144430]
+[17нояб.2026 15:43:32.067] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Microsoft OpenJDK 64-Bit Server VM 21.0.11+10-LTS
+[17нояб.2026 15:43:32.069] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.11 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[17нояб.2026 15:43:32.250] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[17нояб.2026 15:43:32.371] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[17нояб.2026 15:43:32.523] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[17нояб.2026 15:43:32.667] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/KP/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.4+mixin.0.8.7/26d01f0567ab46e9ca0d2ed89d0ecc11aadbd433/sponge-mixin-0.16.4+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[17нояб.2026 15:43:32.782] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) UHD Graphics GL version 4.6.0 - Build 32.0.101.7088, Intel
+[17нояб.2026 15:43:33.396] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 10 dependencies adding them to mods collection
+[17нояб.2026 15:43:33.398] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		AppleSkin 3.0.9+mc1.21 (appleskin)
+		Crawl on Demand 1.2.0 (crawlondemand)
+		Curios API 9.5.1+1.21.1 (curios)
+		CyclicCreativeTabs 1.0.0 (cycliccreativetabs)
+		DoxCore 2.0.0 (doxcore)
+		DoxHitbox 2.1.0 (doxhitbox)
+		First Aid 1.3.1-hotfix20181682026+neoforge1.21.1 (firstaid)
+		GeckoLib 4 4.8.3 (geckolib)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.267 (neoforge)
+		Pehkui 3.8.3+1.21-neoforge (pehkui)
+		Player Animation Library 1.1.6+mc.1.21.1 (player_animation_library)
+		SimpleBedrockModel 2.2.1-neoforge+mc1.21.1 (simplebedrockmodel)
+		Takedown Protocol 3.0.0 (takedownprotocol)
+		Timeless & Classics Guns: Zero 1.1.8-hotfix-r7 (tacz)
+[17нояб.2026 15:43:34.443] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[17нояб.2026 15:43:34.478] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.267, --gameDir, ., --assetsDir, C:\Users\KP\.gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[17нояб.2026 15:43:34.546] [main/WARN] [mixin/]: Reference map 'geckolib.refmap.json' for geckolib.mixins.json could not be read. If this is a development environment you can ignore this message
+[17нояб.2026 15:43:34.546] [main/WARN] [mixin/]: Reference map 'tacz.refmap.json' for tacz.mixins.json could not be read. If this is a development environment you can ignore this message
+[17нояб.2026 15:43:34.551] [main/WARN] [mixin/]: Reference map 'tacz.refmap.json' for tacz.compat.acceleratedrendering.mixins.json could not be read. If this is a development environment you can ignore this message
+[17нояб.2026 15:43:34.558] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[17нояб.2026 15:43:34.560] [main/WARN] [mixin/]: Reference map 'curios.refmap.json' for curios.mixins.json could not be read. If this is a development environment you can ignore this message
+[17нояб.2026 15:43:34.561] [main/WARN] [mixin/]: Reference map 'crawlondemand.refmap.json' for crawlondemand.mixins.json could not be read. If this is a development environment you can ignore this message
+[17нояб.2026 15:43:34.562] [main/WARN] [mixin/]: Reference map 'crawlondemand.refmap.json' for crawlondemand.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[17нояб.2026 15:43:34.563] [main/WARN] [mixin/]: Reference map 'simplebedrockmodel.refmap.json' for simplebedrockmodel.mixins.json could not be read. If this is a development environment you can ignore this message
+[17нояб.2026 15:43:34.817] [main/WARN] [mixin/]: Error loading class: com/mrcrayfish/controllable/client/binding/context/BindingContext (java.lang.ClassNotFoundException: com.mrcrayfish.controllable.client.binding.context.BindingContext)
+[17нояб.2026 15:43:35.593] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[17нояб.2026 15:43:37.407] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 287 milliseconds
+[17нояб.2026 15:43:45.149] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17нояб.2026 15:43:45.150] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17нояб.2026 15:43:45.155] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[17нояб.2026 15:43:45.156] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[17нояб.2026 15:43:45.158] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[17нояб.2026 15:43:45.414] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/KP/OneDrive/Desktop/my_mods/CyclicCreativeTabs/build/moddev/artifacts/neoforge-21.1.267.jar%23200!/assets/.mcassetsroot' uses unexpected schema
+[17нояб.2026 15:43:45.414] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/KP/OneDrive/Desktop/my_mods/CyclicCreativeTabs/build/moddev/artifacts/neoforge-21.1.267.jar%23200!/data/.mcassetsroot' uses unexpected schema
+[17нояб.2026 15:43:45.465] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17нояб.2026 15:43:45.492] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[17нояб.2026 15:43:45.662] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[17нояб.2026 15:43:45.969] [modloading-worker-0/INFO] [com.doxa.doxcore.DoxCoreMod/]: [DoxCore] 공유 라이브러리 로드 — 연동 인터페이스 대기 중
+[17нояб.2026 15:43:45.977] [modloading-worker-0/INFO] [Crawl on Demand/]: Loading Crawl on Demand (NeoForge)
+[17нояб.2026 15:43:46.023] [modloading-worker-0/INFO] [Crawl on Demand/]: Crawl on Demand Common initializing
+[17нояб.2026 15:43:46.039] [modloading-worker-0/INFO] [Crawl on Demand/]: Initialized Network Handler (NeoForge)
+[17нояб.2026 15:43:46.105] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.267, for MC 1.21.1
+[17нояб.2026 15:43:46.491] [modloading-worker-0/INFO] [com.doxa.doxhitbox.DoxHitboxMod/]: [DoxHitbox] TaCZ 총 자세 훅 기본값 등록
+[17нояб.2026 15:43:46.505] [modloading-worker-0/INFO] [com.doxa.doxhitbox.DoxHitboxMod/]: [DoxHitbox] 초기화 완료
+[17нояб.2026 15:43:47.130] [Render thread/INFO] [tacz/GunPackFinder]: Start scanning for gun packs in C:\Users\KP\OneDrive\Desktop\my_mods\CyclicCreativeTabs\run\tacz
+[17нояб.2026 15:43:47.135] [Render thread/INFO] [tacz/GunPackFinder]: - tacz_default_gun, Main namespace: tacz
+[17нояб.2026 15:43:47.136] [Render thread/INFO] [tacz/GunPackFinder]: Found 1 possible gunpack(s) and added them to resource set.
+[17нояб.2026 15:43:47.673] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [cycliccreativetabs]
+[17нояб.2026 15:43:48.057] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: tacz_resources, vanilla, mod_resources, mod/takedownprotocol, mod/geckolib, mod/appleskin, mod/doxcore, mod/tacz, mod/player_animation_library, mod/pehkui, mod/firstaid, mod/curios, mod/crawlondemand, mod/simplebedrockmodel, mod/doxhitbox, mod/cycliccreativetabs, mod/neoforge
+[17нояб.2026 15:43:48.079] [Worker-Main-5/INFO] [firstaid/]: firstaid starting...
+[17нояб.2026 15:43:48.082] [Worker-Main-3/WARN] [b1sya.takedownprotocol.gameplay.adapter.TaCZAdapter/]: Takedown Protocol: Unofficial TaCZ is not present or API has changed. Melee rifle strikes disabled.
+[17нояб.2026 15:43:48.245] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:shoot_cool_down for minecraft:living_entity
+[17нояб.2026 15:43:48.245] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:melee_cool_down for minecraft:living_entity
+[17нояб.2026 15:43:48.246] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:reload_state for minecraft:living_entity
+[17нояб.2026 15:43:48.246] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:aiming_progress for minecraft:living_entity
+[17нояб.2026 15:43:48.246] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:draw_cool_down for minecraft:living_entity
+[17нояб.2026 15:43:48.246] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:is_aiming for minecraft:living_entity
+[17нояб.2026 15:43:48.246] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:sprint_time for minecraft:living_entity
+[17нояб.2026 15:43:48.246] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:is_bolting for minecraft:living_entity
+[17нояб.2026 15:43:48.246] [Render thread/INFO] [tacz/SYNCED_ENTITY_DATA_TAC_COPY]: Registered synced data key tacz:throwable_using for minecraft:living_entity
+[17нояб.2026 15:43:48.506] [Worker-Main-9/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[17нояб.2026 15:43:49.298] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[17нояб.2026 15:43:51.451] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[17нояб.2026 15:43:51.451] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[17нояб.2026 15:43:52.524] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Динамики (Realtek(R) Audio)
+[17нояб.2026 15:43:52.527] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[17нояб.2026 15:43:52.654] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[17нояб.2026 15:43:53.418] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[17нояб.2026 15:43:53.437] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[17нояб.2026 15:43:53.473] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[17нояб.2026 15:43:53.489] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[17нояб.2026 15:43:53.629] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[17нояб.2026 15:43:53.639] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[17нояб.2026 15:43:53.645] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[17нояб.2026 15:43:53.651] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[17нояб.2026 15:43:53.775] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[17нояб.2026 15:43:53.801] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[17нояб.2026 15:43:53.808] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[17нояб.2026 15:43:53.814] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[17нояб.2026 15:43:53.818] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[17нояб.2026 15:43:53.908] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[17нояб.2026 15:43:55.665] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[17нояб.2026 15:44:01.623] [Render thread/INFO] [tacz/GunPackFinder]: Start scanning for gun packs in C:\Users\KP\OneDrive\Desktop\my_mods\CyclicCreativeTabs\run\tacz
+[17нояб.2026 15:44:01.624] [Render thread/INFO] [tacz/GunPackFinder]: - tacz_default_gun, Main namespace: tacz
+[17нояб.2026 15:44:01.624] [Render thread/INFO] [tacz/GunPackFinder]: Found 1 possible gunpack(s) and added them to resource set.
+[17нояб.2026 15:44:02.418] [Worker-Main-8/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag takedownprotocol:cancut as it is missing following references: 
+	superbwarfare:knife (from mod/takedownprotocol)
+	wararmbise:military_knife (from mod/takedownprotocol)
+[17нояб.2026 15:44:02.590] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1480 recipes
+[17нояб.2026 15:44:02.769] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[17нояб.2026 15:44:02.775] [Render thread/INFO] [Curios API/]: Loaded 10 curio slots
+[17нояб.2026 15:44:02.776] [Render thread/INFO] [Curios API/]: Loaded 1 curio entities
+[17нояб.2026 15:44:03.209] [Render thread/INFO] [firstaid/registry]: Built local FirstAid registry lookups
+[17нояб.2026 15:44:03.381] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[17нояб.2026 15:44:03.382] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[17нояб.2026 15:44:04.770] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[17нояб.2026 15:44:05.033] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[17нояб.2026 15:44:05.208] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[17нояб.2026 15:44:05.217] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 431 ms
+[17нояб.2026 15:44:05.315] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[17нояб.2026 15:44:05.315] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[17нояб.2026 15:44:05.779] [Render thread/INFO] [tacz/GunPackFinder]: Start scanning for gun packs in C:\Users\KP\OneDrive\Desktop\my_mods\CyclicCreativeTabs\run\tacz
+[17нояб.2026 15:44:05.780] [Render thread/INFO] [tacz/GunPackFinder]: - tacz_default_gun, Main namespace: tacz
+[17нояб.2026 15:44:05.780] [Render thread/INFO] [tacz/GunPackFinder]: Found 1 possible gunpack(s) and added them to resource set.
+[17нояб.2026 15:44:06.231] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:d9855f5b] logged in with entity id 82 at (-71.5, 106.0, -22.5)
+[17нояб.2026 15:44:06.310] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[17нояб.2026 15:44:06.531] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] ! [First Aid] Press H to open the health UI and inspect or treat body parts.
+[17нояб.2026 15:44:06.663] [Render thread/INFO] [firstaid/]: Received client damage model attachment sync, holderType=net.minecraft.client.player.LocalPlayer, reusedModel=false, hasTag=true
+[17нояб.2026 15:44:06.665] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [FirstAid] Available admin commands:
+[17нояб.2026 15:44:06.665] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Click a bracketed command to prefill chat, or hover to view parameters and examples.
+[17нояб.2026 15:44:06.666] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Core [Pain] [Suppression] [Join Tips] [Medicine]
+[17нояб.2026 15:44:06.666] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Rescue [Natural Regen] [Wake-up]
+[17нояб.2026 15:44:06.667] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Advanced [Debuffs] [Random Damage] [Addiction] [Damage Test]
+[17нояб.2026 15:44:06.672] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[17нояб.2026 15:44:06.864] [Render thread/INFO] [firstaid/]: StatusEffectLayer.render entered for player=Dev
+[17нояб.2026 15:44:06.865] [Render thread/INFO] [firstaid/]: StatusEffectLayer.render received damage model=PlayerDamageModel, unconsciousTicks=0, adrenalineTicks=0
+[17нояб.2026 15:44:17.762] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[17нояб.2026 15:44:17.795] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17нояб.2026 15:44:17.844] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17нояб.2026 15:44:17.845] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17нояб.2026 15:44:19.777] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[17нояб.2026 15:44:19.778] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[17нояб.2026 15:44:19.790] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[17нояб.2026 15:44:19.826] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[17нояб.2026 15:44:19.827] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[17нояб.2026 15:44:19.827] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[17нояб.2026 15:44:20.745] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[17нояб.2026 15:44:22.335] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[17нояб.2026 15:44:22.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[17нояб.2026 15:44:22.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[17нояб.2026 15:44:22.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17нояб.2026 15:44:22.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17нояб.2026 15:44:22.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17нояб.2026 15:44:23.998] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

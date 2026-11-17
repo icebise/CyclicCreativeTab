@@ -1,0 +1,6 @@
+#Takedown Protocol Client Configuration
+[client]
+	#Allowed Values: BLACK_SCREEN, HEAVY_BLUR
+	effectType = "BLACK_SCREEN"
+	muteSounds = true
+	showQteHud = true

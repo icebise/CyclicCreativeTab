@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.bisya.cycliccreativetabs.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CreativeModeInventoryScreenMixin"
+  ],
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

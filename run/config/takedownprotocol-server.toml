@@ -1,0 +1,32 @@
+#Takedown Protocol Server Configuration
+[server]
+	allowedTaCZGuns = []
+	# Default: 3000
+	# Range: 500 ~ 10000
+	comboTimeoutMs = 3000
+	# Default: 4
+	# Range: 2 ~ 10
+	requiredComboHits = 4
+	allowLooting = true
+	allowLootingArmor = true
+	allowBodyDragging = true
+	allowFinisher = true
+	bindingItemId = "minecraft:string"
+	# Default: 30
+	# Range: 5 ~ 120
+	interactionTimeoutSeconds = 30
+	# Default: 0.04
+	# Range: 0.01 ~ 0.2
+	qtePressIncrement = 0.04
+	# Default: 0.01
+	# Range: 0.001 ~ 0.1
+	soloEscapeDecayRate = 0.01
+	# Default: 5
+	# Range: 1 ~ 30
+	allyHelpTimeSeconds = 5
+
+	#Фильтрация предметов при ограблении
+	[server.robbery_filter]
+		#Allowed Values: WHITELIST, BLACKLIST, OFF
+		filterMode = "BLACKLIST"
+		filterItems = ["minecraft:bedrock", "minecraft:barrier"]

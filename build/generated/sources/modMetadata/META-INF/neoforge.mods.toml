@@ -1,0 +1,41 @@
+
+modLoader="javafml" #mandatory
+
+loaderVersion="[1,)" #mandatory
+
+license="MIT License"
+
+[[mods]] #mandatory
+
+modId="cycliccreativetabs" #mandatory
+
+version="1.0.0" #mandatory
+
+displayName="CyclicCreativeTabs" #mandatory
+
+authors="bisya"
+
+description='''
+Makes the creative inventory page navigation buttons (< and >) loop endlessly!
+Jump straight from the first page to the last, and from the last page back to the first with a single click.
+'''
+
+[[mixins]]
+config="cycliccreativetabs.mixins.json"
+
+#[[accessTransformers]]
+#file="META-INF/accesstransformer.cfg"
+
+[[dependencies.cycliccreativetabs]] #optional
+    modId="neoforge" #mandatory
+    type="required" #mandatory
+    versionRange="[21.1.267,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.cycliccreativetabs]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
