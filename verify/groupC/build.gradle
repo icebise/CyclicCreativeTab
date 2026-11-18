@@ -1,0 +1,103 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+}
+
+// Runtime verification project for the 26.1 - 26.3 jar. Minecraft 26.x ships
+// deobfuscated, so no mappings are needed. Parameterised by:
+//   -Pmc=<version>              Minecraft version to start
+//   -PwithFabricApi             install Fabric API
+//   -PfabricApiVersion=<ver>    Fabric API build for that Minecraft version
+//   -PwithModMenu               install Mod Menu (optional integration check)
+//   -PmodmenuVersion=<ver>      Mod Menu build for that Minecraft version
+//   -PmodJar=<path>             release jar to drop into run/mods
+
+def mcVersion = (project.findProperty("mc") ?: "26.1").toString()
+def withApi = project.hasProperty("withFabricApi")
+def withModMenu = project.hasProperty("withModMenu")
+def runName = "${mcVersion}-" + (withApi ? "api" : "builtin") + (withModMenu ? "-modmenu" : "")
+def runDirectory = "run/${runName}"
+
+version = "1.0.0"
+group = "com.bisya.smoke"
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/releases/"
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${mcVersion}"
+    implementation "net.fabricmc:fabric-loader:${loader_version}"
+    if (withApi) {
+        def apiVersion = project.findProperty("fabricApiVersion")
+        if (!apiVersion) {
+            throw new GradleException("-PwithFabricApi requires -PfabricApiVersion")
+        }
+        implementation "net.fabricmc.fabric-api:fabric-api:${apiVersion}"
+    }
+    if (withModMenu) {
+        def modmenuVersion = project.findProperty("modmenuVersion")
+        if (!modmenuVersion) {
+            throw new GradleException("-PwithModMenu requires -PmodmenuVersion")
+        }
+        localRuntime "com.terraformersmc:modmenu:${modmenuVersion}"
+    }
+}
+
+sourceSets {
+    main {
+        java.srcDirs = [file("../shared/smoke/java")]
+        resources.srcDirs = [file("../shared/smoke/resources")]
+    }
+}
+
+processResources {
+    inputs.property "smoke_compat", smoke_compat
+    filesMatching("smoke.mixins.json") {
+        expand "smoke_compat": smoke_compat
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 25
+    options.encoding = "UTF-8"
+}
+
+loom {
+    runs {
+        client {
+            runDir = runDirectory
+            property "smoke.output", file("../results/${project.name}/${runName}").absolutePath
+            property "smoke.mc", mcVersion
+            property "smoke.api", withApi ? "yes" : "no"
+            property "smoke.modmenu", withModMenu ? "yes" : "no"
+        }
+    }
+}
+
+tasks.named("runClient").configure {
+    doFirst {
+        def directory = file(runDirectory)
+        directory.mkdirs()
+        new File(directory, "options.txt").text =
+                "onboardAccessibility:false\n" +
+                "skipMultiplayerWarning:true\n" +
+                "tutorialStep:none\n" +
+                "lang:en_us\n" +
+                "guiScale:2\n" +
+                "pauseOnLostFocus:false\n" +
+                "renderClouds:false\n"
+        def mods = new File(directory, "mods")
+        mods.mkdirs()
+        mods.listFiles()?.each { it.delete() }
+        def jar = project.findProperty("modJar")
+        if (jar) {
+            java.nio.file.Files.copy(project.file(jar).toPath(),
+                    new File(mods, "cycliccreativetabs.jar").toPath())
+        }
+    }
+}
+

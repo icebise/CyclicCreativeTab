@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.bisya.smoke.mixin",
+  "compatibilityLevel": "${smoke_compat}",
+  "client": [
+    "CreativeModeTabsMixin",
+    "CreativeModeTabsValidateMixin",
+    "MinecraftTickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

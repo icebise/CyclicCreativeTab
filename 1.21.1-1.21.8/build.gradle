@@ -1,0 +1,49 @@
+plugins {
+    id 'fabric-loom' version "${loom_version}"
+}
+
+// The released jar is compiled against the oldest supported version but is
+// expected to run on every version in the range. Passing -Pmc=<version>
+// recompiles the same sources against another version; this is used by the
+// verification script to make sure nothing in the range has moved underneath
+// the mod.
+def mcVersion = (project.findProperty("mc") ?: project.minecraft_version).toString()
+def mcOverride = project.hasProperty("mc")
+
+version = "${mod_version}+${release_label}"
+group = project.maven_group
+
+base {
+    archivesName = "CyclicCreativeTabs-fabric" + (mcOverride ? "-mc${mcVersion}" : "")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${mcVersion}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "minecraft_range", project.minecraft_range
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version,
+                "minecraft_range": project.minecraft_range
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = project.java_release as int
+    options.encoding = "UTF-8"
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.toVersion(project.java_release as int)
+    targetCompatibility = JavaVersion.toVersion(project.java_release as int)
+}

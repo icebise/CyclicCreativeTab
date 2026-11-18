@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "cctsmoke",
+  "version": "1.0.0",
+  "name": "Cyclic Creative Tabs verification",
+  "description": "Development only automated verification harness.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.bisya.smoke.SmokeClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "smoke.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {}
+}

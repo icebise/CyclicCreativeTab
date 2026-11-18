@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "cycliccreativetabs",
+  "version": "${version}",
+  "name": "Cyclic Creative Tabs",
+  "description": "Makes the creative inventory page navigation buttons (< and >) loop endlessly! Jump straight from the first page to the last, and from the last page back to the first with a single click.",
+  "authors": [
+    "bisya",
+    "Mr_Lan123"
+  ],
+  "contact": {
+    "homepage": "https://github.com/icebise/CyclicCreativeTab",
+    "sources": "https://github.com/icebise/CyclicCreativeTab",
+    "issues": "https://github.com/icebise/CyclicCreativeTab/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/cycliccreativetabs/icon.png",
+  "environment": "client",
+  "mixins": [
+    {
+      "config": "cycliccreativetabs.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "custom": {
+    "modmenu": {
+      "badges": [
+        "client"
+      ]
+    }
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "${minecraft_range}"
+  }
+}

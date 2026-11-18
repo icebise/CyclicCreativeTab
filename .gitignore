@@ -1,0 +1,22 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Development runtimes and reports
+run/
+logs/
+verify/run/
+verify/results/
+compile-matrix.log
+build.log
+
+# Distribution output
+dist/
